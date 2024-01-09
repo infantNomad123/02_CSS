@@ -60,11 +60,21 @@ body{
 .hc-1{
     height:50%;
     width:100%;
+    background-image: url(../images/max_payne3.jpg);
 }
 .hc-2{
+    display:flex;
+    flex-direction: row;
     height:50%;
     width:100%;
     background-color: black;
+}
+.hc-2> .buttContainer{
+    display:flex;
+    flex-wrap: nowrap;
+}
+.buttContainer button{
+    margin-right:40px;
 }
 
 nav{
@@ -81,30 +91,54 @@ nav{
     flex-direction:row;
     justify-content: center;
     height:100%;
-    width:100%
+    width:100%;
+    margin-left:60px;
+    
+}
+.image-container{
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 160px;
     
 }
 
+
 .navbar> li{
     display:flex;
-    margin:20px;
+    padding:6px 20px;
+    align-self:space-between;
+    width:75px;
     justify-content: center;
+}
+.navbar> li:hover{
+    cursor: pointer;
+    border-bottom: 2px solid white;
 }
 .navbar> li> a{
     color:white;
+    font-size:12px;
     display:flex;
     align-items: center;
 }
-div{
-    display:block;
-}
+
 .download{
     width:200px;
     height: 40px;
+    margin-top: 15px;
     background-color:rgb(255, 166, 0);
     border-radius:10px;
-    margin-top:7px;
+    
 }
+.download:hover{
+    cursor: pointer;
+    background-color:rgb(255, 157, 0);
+
+}
+
 main{
     display:flex;
     flex-direction: column;
