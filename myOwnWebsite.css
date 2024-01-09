@@ -1,0 +1,91 @@
+/*------------ 전체 설정 -------------*/
+
+/*:root - 전역 요소 지정을 위한 가상 선택자 
+    -페이지 내부에서 공통으로 사용할 값을 변수로 선언
+
+    *변수 : 값을 저장하는 것
+
+*/
+:root{
+    --main-color: grey;
+    /* --main-font-size: 20px; */
+    min-width:1000px;
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+      
+}
+
+a{
+    color: black;
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+ul{
+    list-style:none; /* 목록의 스타일(앞에 붙는 점) 제거 */
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+
+    /* min-width/height : 
+        화면(기기, 브라우저) 크기가 작아져도 유지해야 할 최소 크기
+    */
+    min-width: 768px;
+    min-height: 100vh; /* 화면 높이 100%*/
+}
+
+/* 웹폰트 추가 */
+/* -> 폰트를 적용하고 싶은 곳에서
+    font-family: 'GoryeongStrawberry' 작성
+*/
+
+/*-------------- header ------------ */
+
+.header{
+    display:flex;
+    flex-direction:column;
+    height:150px;
+    width:100%;
+}
+.header> *{
+    border: 1px solid black;
+}
+
+.hc-1{
+    height:50%;
+    width:100%;
+}
+.hc-2{
+    height:50%;
+    width:100%;
+}
+
+nav{
+    display:flex;
+    padding: 10px 15px;
+    height:65px;
+
+    
+    
+}
+.navbar{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    height:65px;
+    width:100%
+    
+}
+
+.navbar> li{
+    display:flex;
+    margin:20px;
+    justify-content: center;
+}
+
